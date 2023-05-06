@@ -29,10 +29,12 @@ a{
   margin-bottom: 50px;
   color: #fff;
   background-color: #00703C;
+  border-radius: 6px;
 }
 
 input{
-  width: 50%;
+  width: 80%;
+  font-size: 24px;
   display: block;
 }
 input[type="radio"]{
@@ -41,7 +43,7 @@ input[type="radio"]{
   height: 30px;
 }
 input[type="date"]{
-  width: 150px;
+  width: 30%;
   height: 30px;
 }
 .navbar {
@@ -141,13 +143,12 @@ h4{
   background-color: #00703c;
   color: #fff;
   font-size: 24px;
-  padding: 50px;
+  padding: 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 15px;
 }
-.button1:not(:last-child) {
-  margin-bottom: 50px;
-}
+
 
 .login-container {
   display: flex;
@@ -179,5 +180,36 @@ h4{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.complationBox{
+  width: 40%;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  margin: 50px 30px;
+  background-color: #00703C;
+}
+.complationBox .title{
+  font-size: 38px;
+  font-weight: bold;
+}
+.complationBox .refNumber{
+  font-size:28px;
+  margin-top: 20px;
+}
+.complationBox .refNumber span{
+  font-weight: bold;
+}
+.bottomContent{
+  margin: 50px 30px;
+}
+.bottomContent p{
+  font-size: 25px;
+}
+.bottomContent .title{
+  font-size: 34px;
+  font-weight: bold;
 }
 

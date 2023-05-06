@@ -12,6 +12,7 @@ export default function Register() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(`${userName} ${password} , ${email}` );
         fetch('https://localhost:44370/account/register', {
             method: "POST",
             headers: {
@@ -25,10 +26,12 @@ export default function Register() {
 
         }).then(res => res.json())
             .then(data => {
-                if (!data) setSucceed(data);
-                else {
+                if (data) {
                     sessionStorage.setItem("userName", userName)
-                    navication('/')
+                    navication('/complation')
+                }
+                else {
+                    setSucceed(data)
                 }
             })
     }
@@ -58,8 +61,8 @@ export default function Register() {
                     </label>
                     <br />
                     <label>
-                        Middle Name:
-                        <input type="text" required />
+                        Middle Name (optional):
+                        <input type="text" />
                     </label>
                     <br />
                     <label>
@@ -143,6 +146,7 @@ export default function Register() {
                         Email:
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="govuk-input"  />
                     </label> */}
+
                     <label>
                         {succeed ? <p></p> : <p style={{ color: "red" }}>Password must include at least 1 uppercace, 1 lowercase and 1 symbol </p>}
                     </label>
@@ -154,7 +158,7 @@ export default function Register() {
                         </button>
                     </label>
                     <div className="buttons">
-                        <Link to='/' className="button1">
+                        <Link to='/selectRole' className="button1">
                             Go back
                         </Link>
                         <Link to='/login' className="button1">

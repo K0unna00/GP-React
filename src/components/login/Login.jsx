@@ -35,7 +35,7 @@ export default function Login() {
                 if (!data) setSucceed(data);
                 else {
                     sessionStorage.setItem("userName",userName)
-                    navication('/')
+                    navication('/complation')
                 }
             })
     }
@@ -69,7 +69,7 @@ export default function Login() {
                         {succeed ? <p></p> : <p style={{ color: "red" }}>Username or password is not correct</p>}
                     </label>
                     <div className="buttons">
-                        <Link to='/' className="button1">
+                        <Link to='/selectRole' className="button1">
                             Go back
                         </Link>
                         {page == "Patient" ? <Link to='/register' className="button1">
