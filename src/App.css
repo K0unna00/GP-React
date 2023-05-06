@@ -1,0 +1,149 @@
+.govuk {
+  font-family: 'GOVUK';
+}
+a{
+  text-decoration: none;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.left-nav {
+  margin-right: auto;
+}
+
+.center-nav {
+  margin: 0 auto;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.blue-strip {
+  height: 10px;
+  background-color: #1d70b8;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  height: 180px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.header-text {
+  margin: 0;
+  font-family: 'GOVUK';
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.header-subtext {
+  margin-top: 30px;
+  font-family: 'GOVUK';
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+ul {
+  list-style: disc;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: px;
+}
+
+.start-button {
+  background-color: #00703c;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'GOVUK';
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h3{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  padding: 35px;
+  flex-direction: column;
+  text-align: center;
+}
+h4{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  padding: 35px;
+  flex-direction: column;
+  text-align: center;
+}
+.button1 {
+  text-align: center;
+  background-color: #00703c;
+  color: #fff;
+  font-size: 24px;
+  padding: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button1:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.login-container input {
+  margin-bottom: 10px;
+}
+
+.login-button,
+.go-back-button {
+  margin-top: 10px;
+}
+
+.go-back-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
