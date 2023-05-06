@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 
@@ -8,7 +8,13 @@ export default function Login() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
     const [succeed, setSucceed] = useState(true);
+    const [page, setPage] = useState('');
 
+
+    useEffect(()=>{
+        let page = sessionStorage.getItem("currentPage");
+        setPage(page);
+    },[])
 
 
 
@@ -66,9 +72,10 @@ export default function Login() {
                         <Link to='/' className="button1">
                             Go back
                         </Link>
-                        <Link to='/register' className="button1">
+                        {page == "Patient" ? <Link to='/register' className="button1">
                             Go Register
-                        </Link>
+                        </Link> : ''}
+                        
                         <button type='submit' className="button1" disabled={userName === '' || password === ''}>Login</button>
                     </div>
                 </form>

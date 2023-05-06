@@ -9,7 +9,41 @@ a{
   justify-content: space-between;
 
 }
+.formTitle{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.radioBtn{
+  margin: 10px 0;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.submitBtn{
+  display: block;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #fff;
+  background-color: #00703C;
+}
 
+input{
+  width: 50%;
+  display: block;
+}
+input[type="radio"]{
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+}
+input[type="date"]{
+  width: 150px;
+  height: 30px;
+}
 .navbar {
   background-color: black;
   color: white;
